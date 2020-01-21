@@ -1,0 +1,56 @@
+<html>
+  <!-- 
+      NOTE THAT THE spws SCRIPT WILL NOT SERVE *ANY* FILE EXCEPT THIS ONE. 
+
+      All css and javascript markup must be in this single file.
+      You CAN reference files on other servers (see the font HREF below)
+  -->
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Exo 2', sans-serif; font-weight:600;}
+      pre { margin-left:25px; }
+      .notes { margin-left:25px; }
+    </style>
+  </head>
+  <body>
+    <h1>Pi Notes - Notes about this particular Pi</h1>
+    <h3>Put the overall title here, like "Asterisk Development System"</h2>
+
+    Web Services:
+    <ul>
+      <li>80 - Asterisk Control Interface (user:demo / pass:nano23!Goofball</li>
+      <li>88 - This is this page's single page web server. (Disable in /etc/rc.local and removing spws and this notes file)</li>
+      <li>9000 - JSON API (see <a href='#'>docs</a> - testing auth token: 4fdafcc25c51dc2de21831a6a12)</li>
+    </ul>
+
+    Repo(s):
+    <ul><li>Main: <a href='#'>https://github.com/....</a></li></ul>
+
+    Notes:
+    <div class='notes'>
+      Here are HTML formatted notes. Just make sure to use &lt;p/&gt; or &lt;br/&gt; to get line breaks, 
+      or you could use list semantics:
+      <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item C</li>
+      </ul>
+    </div>
+
+    <pre>
+Here are some monospaced preformatted notes. 
+Make sure to put carriage returns in!
+Or it may get...
+
+messy!
+    </pre>
+
+    <p>
+      Remember, you can do pretty much whatever you want in this one file. Installation notes, break notes, etc.
+    </p>
+    <p>
+      One really neat suggested idea is to use a markdown proessor loaded from off-server and make the whole 
+      thing markdown. Maybe rev 2 :) Or someone could contribute it here too!
+    </p>
+  </body>
