@@ -19,7 +19,7 @@ FILE="notes.html"
 
 while [ 1 ];
 do
-{ printf 'HTTP/1.0 200 OK\r\nContent-Length: %d\r\n\r\n' "$(wc -c < $PAGE)"; cat $PAGE; } | nc -l $PORT >/dev/nul
+    { printf 'HTTP/1.0 200 OK\r\nContent-Length: %d\r\n\r\n' "$(wc -c < ${FILE})"; cat ${FILE}; } | nc -l ${PORT} >/dev/nul
 done
 ```
 
