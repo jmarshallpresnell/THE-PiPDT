@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Pi Info - Markdown version</title>
+    <meta charset="UTF-8">
     <!-- Yes, it's jammed together so it doesn't take a lot of vertical space when writing notes -->
     <script type="application/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js'></script>
     <script> document.addEventListener('DOMContentLoaded', (event) => { var converter = new showdown.Converter(); converter.setFlavor('github'); html = converter.makeHtml(document.getElementsByTagName('body')[0].textContent); document.getElementsByTagName('body')[0].innerHTML = html; }); </script>
